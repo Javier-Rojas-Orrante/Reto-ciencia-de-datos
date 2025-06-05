@@ -2,7 +2,7 @@ import json
 import logging
 from llm_service import LLMService
 from parser import TicketParser
-LLM = LLMService('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')
+LLM = LLMService('apikey')
 
 print(LLM.chat_message([{"role": "user", "content": "Hola, ¿cómo estás?"}]))
 
