@@ -8,7 +8,7 @@ class LLMService:
             base_url="https://openrouter.ai/api/v1",
             api_key=api_key
         )
-        self.model = "google/gemini-2.0-flash-thinking-exp:free"
+        self.model = "gpt-4.1-nano-2025-04-14"
         logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 

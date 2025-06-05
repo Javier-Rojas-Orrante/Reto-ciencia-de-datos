@@ -2,7 +2,11 @@ import json
 import logging
 from llm_service import LLMService
 from parser import TicketParser
-# image_analysis_service = LLMService(api_key)
+LLM = LLMService('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')
+
+print(LLM.chat_message([{"role": "user", "content": "Hola, ¿cómo estás?"}]))
+
+
 
 
 # def load_config(config_path="code/config.json"):
@@ -18,5 +22,7 @@ from parser import TicketParser
 #         return {}
 
 
-parser = TicketParser("Tickets de atencion a socios (1).json")
-print(parser.get_ticket_data(1))  # Get as chat-like format
+#parser = TicketParser("Tickets de atencion a socios (1).json", "Tickets de atencion a socios (2).json")
+#print(parser.get_info_conversation(1))
+#print(parser.get_formatted_string(1)) 
+
